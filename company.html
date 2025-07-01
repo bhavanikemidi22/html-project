@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Top Companies</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #f0f2f5;
+            text-align: center;
+            padding: 50px;
+        }
+
+        h1 {
+            color: #333;
+            margin-bottom: 40px;
+        }
+
+        .company-button {
+            display: inline-block;
+            margin: 10px;
+            padding: 15px 30px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        .company-button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Companies</h1>
+
+    <button class="company-button" onclick="openCompany('https://www.google.com')">Google</button>
+    <button class="company-button" onclick="openCompany('https://www.apple.com')">Apple</button>
+    <button class="company-button" onclick="openCompany('https://www.microsoft.com')">Microsoft</button>
+    <button class="company-button" onclick="openCompany('https://www.amazon.com')">Amazon</button>
+    <button class="company-button" onclick="openCompany('https://www.meta.com')">Meta (Facebook)</button>
+
+    <script>
+        function openCompany(url) {
+            window.open(url, '_blank');
+        }
+    </script>
+
+</body>
+</html>
+
+
+
